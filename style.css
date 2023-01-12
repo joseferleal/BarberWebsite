@@ -1,0 +1,343 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+    border-bottom: 20px solid #c78c19;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    
+    
+    
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.Productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.Productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;/*Hace que el 30% de cada uno de los contenedores se cuente dentro del ancho máximo*/
+    /* border-color: #000000;
+    border-width: 2px;
+    border-style: solid; */
+    border: 2px solid #000000;
+    border-top-width:5px ;
+    border-radius: 10px 30px 10px 30px;
+    transition: 100ms;
+}
+
+.Productos li:hover{
+    border-color: #c78c19;
+    
+}
+
+.Productos li:active{
+    border-color: #088c19;
+    box-shadow: 10px 10px 30px 5px #000000; /*Puedo colocar cuantas sombras quiera, el procedimiento es el mismo*/
+}
+
+.Productos li:hover h2{
+    font-size: 33px;
+}
+
+.Productos li>img:hover{
+    opacity: 0.8;
+}
+
+.Productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.prod-description{
+    font-size: 18px;
+}
+
+.prod-price{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+nav a:hover{
+color: #c78c19 ;
+text-decoration: underline;
+}
+
+footer{
+    border-top: 20px solid #c78c19;
+    background: url(imagenes/bg.jpg);
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright{
+    text-align: center;
+    color: #FFFF;
+    font-size: 13px;
+    margin: 20px;
+} 
+
+/* main{ 
+se aplicó por bloques mejor
+} */
+/************************************Página de contactos***************************************************/
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+
+.input-datos{
+    display: block;
+    margin: 0 0 25px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+
+.checkbox{
+    margin: 20px 0;
+}
+
+
+.enviar{
+    width: 40%;
+    padding: 15px 0 ;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all /*puedo poner background solamente */;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2) /* rotate(360deg) */;
+}
+
+table{
+    margin: 40px 40px;
+    display: block;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+.contacto-formulario{
+    display: flex;
+}
+
+
+.contacto-formulario{
+    padding-left: 5px;
+
+}
+
+.nombre-apellido{
+    text-shadow: 2px 2px 25px #000000;
+}
+
+thead, tbody{
+    box-shadow: inset 0 0 30px #888888;
+   
+}
+
+
+/****************************CSS para el index*********************************/
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin: 0 0 1em;
+    color: rgba(0, 0, 0, 0.80);
+    clear: left; /* o sea que cualquier configuración que venga después del título de la izquierda que me la limpie, un clear left. */
+}
+
+.principal{
+    background: #FEFEFE;
+    padding: 3em;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    padding: 5px;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+
+.utensilios{
+    width: calc(60%-25px);
+    float: left;
+    margin: 0 20px 20px 0;
+    
+
+}
+
+.mapa{
+    padding: 3em 0; /*3em quiere decir 3 veces el tamaño de la fuente*/
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #555555 ;
+ 
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.description{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+
+.items:before{
+    content:"✵";
+}
+.items:nth-child(2n){ /*Es una pseudo clase*/
+    font-weight: bold;
+}
+
+
+
+.imgDiferenciales{
+    width: 60%;
+}
+
+
+h2:first-letter{
+    font-weight: bold;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+
+/************************CSS para la página de contacto**********************/
+
+
+@media screen and (max-width:480px){ /*Si encuentra una pantalla y si el ancho de esta llega a ser hasta 480, entonces que haga lo siguiente*/
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+    width: auto;
+  }
+    .description, .imgDiferenciales{
+        width: 100%;
+    }
+    .Productos, .Productos>li{
+        width: 90%;
+        
+    }
+}
+
+/**Selectores avanzados en CSS****/
+
+
+/****main > p{   /*Que aplique a los hijos directos del main, no a los nietos
+    background: red;
+}
+
+img + p{
+    background: yellow; /*Se aplica al primer párrafo que siga después de una imagen
+}
+
+img ~ p{
+    background: #088c19; /*Se aplica a todos (sobrescribe el anterior)
+}
+
+.principal p:not(#mision){
+    background: orange;
+}*/

@@ -1,0 +1,106 @@
+/*Header principal*/
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;;
+    margin: 0 0 0 15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19 ;
+    text-decoration: underline;
+    }
+/*---------------------------------------*/
+
+
+.titulo-principal{
+    padding-left: 30px;
+}
+p{
+    text-align: center;
+}
+#banner{
+    border-top: 20px solid #c78c19;
+    width: 100%;
+    
+}
+
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+h2{
+    
+    height: 50px;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 20px;
+}
+
+.titulo-centrado{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #ffffff;
+    padding: 20px;
+}
+.items{
+    font-style: italic;
+}
+
+.description{
+    display: inline-block; /*Que ocupe solo el espacio de su contenido*/
+    vertical-align: top; /*Que los elementos cercanos me los alinee según el elemento de arriba */
+    width: 20%;
+    margin-right: 15%;
+}
+
+/*-----------------------Footer -----------------------------*/
+footer{
+    border-top: 20px solid #c78c19;
+    background: url(imagenes/bg.jpg);
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright{
+    text-align: center;
+    color: #FFFF;
+    font-size: 13px;
+    margin: 20px;
+} 
+
+/*--------------------------------------------------------------*/

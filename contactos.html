@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>
+            Contacto-Barbería Alura
+        </title>
+        <link rel="stylesheet" href="reset.css"> <!--Para que resetee los valores por defecto del navegador y empecemos en limpio-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="logo de la barbería Alura"></h1>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="productos.html"> Productos </a></li>
+                    <li> <a href="contactos.html"> Contacto</a> </li>
+                </ul>
+            </nav>
+            </div>
+            
+            
+        </header>
+        <main class="contacto-formulario">
+            <form action="">
+                <label for="nombreapellido" class="nombre-apellido"> Nombre y Apellido</label>
+              
+                <input type="text" id="nombreapellido" class="input-datos" required>
+              
+                <label for="correoelectronico">Correo electrónico</label>
+                
+                <input type="email" id="correoelectronico" class="input-datos" required placeholder="nombre@dominio.com">
+                
+                <label for="telefono">Teléfono</label>
+                
+                <input type="tel" id="telefono" class="input-datos" required placeholder="(xx)xxx xxxxxxx">
+                <label for="mensaje">Mensaje</label>
+
+                <textarea name="" id="mensaje" cols="70" rows="10" class="input-datos" required placeholder="Escribe tu mensaje"></textarea>
+                <fieldset>
+                    <legend>¿Cómo te gustaría que te contactarámos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="Email" id="radio-email">Email</label>
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                
+                <label for="radio-wp"><input type="radio" name="contacto" value="WhatsApp" id="radio-wp" checked>WhatsApp</label>
+                
+
+                </fieldset>
+                <fieldset>
+                    <legend>¿En cuál horario prefieres que te atendamos?</legend>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Te gustaría recibir novedades de nosotros?</label> <!--Otra forma de vincular labels con inputs-->
+                
+                <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th> 
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>  <!--Son las celdas (columnas por fila) de cada fila-->
+                        <td>08-20H</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08-20H</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08-20H</td>
+                    </tr>
+    
+                </tbody>
+                
+            </table>
+
+        </main>
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="logo de la barbería Alura">
+            <p class="copyright">&copy Copyright - Barbería Alura - 2022</p>
+          </footer>  
+        </body>
+        </html>
